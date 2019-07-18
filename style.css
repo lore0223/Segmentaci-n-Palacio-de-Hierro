@@ -1,0 +1,20 @@
+.hide{
+    display:none;
+ }
+ .red-div{
+    border: solid 3px red;
+    margin-top: 5%;
+ }
+ .blue-div{
+    border: solid 3px blue;
+    margin-top: 5%;
+ }
+ .green-div{
+    border: solid 3px green;
+    margin-top: 5%;
+ }
+
+ .purple{
+    border: solid 3px purple;
+    margin-top: 5%;
+ }
