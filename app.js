@@ -1,11 +1,11 @@
-const red = document.getElementById("red");
-const blue = document.getElementById("blue");
-const green = document.getElementById("green");
-const divPurple = document.getElementById('purple-div');
-const colors = document.getElementsByClassName('colors');
-const redDiv = document.getElementById('red-div');
-const blueDiv = document.getElementById('blue-div');
-const greenDiv = document.getElementById('green-div');
+const luxe         = document.getElementById("luxe");
+const man          = document.getElementById("man");
+const woman        = document.getElementById("woman");
+const homeSection  = document.getElementById('home-section');
+const luxeSection  = document.getElementById('luxe-section');
+const manSection   = document.getElementById('man-section');
+const womanSection = document.getElementById('woman-section');
+const colors       = document.getElementsByClassName('colors');
 
 
 function setCookie(name, value, days) {
@@ -37,31 +37,40 @@ function eraseCookie(name) {
 
 
 function doalert(checkboxElem) {
-    // divPurple.classList.add('hide');
     let checkboxId = checkboxElem.id;
+    console.log(checkboxId);
+    
     const checkboxName = checkboxElem.name;
-    setCookie(checkboxName, checkboxId, 1)
-}
+    console.log(checkboxName);
+    
+    setCookie(checkboxName, checkboxId, 7)
+};
+    
 
 let cookieSaved = getCookie('checkfield');
 console.log(cookieSaved)
 
-    if (cookieSaved == 'red') {
-        redDiv.classList.remove('hide');
+    if (cookieSaved == 'luxe') {
+        luxeSection.classList.remove('hide');
 
-    } else if (cookieSaved == 'blue') {
+    } else if (cookieSaved == 'man') {
 
-        blueDiv.classList.remove('hide');
+        manSection.classList.remove('hide');
 
-    } else if (cookieSaved ==  'green') {
-        greenDiv.classList.remove('hide');
+    } else if (cookieSaved ==  'woman ') {
+        womanSection.classList.remove('hide');
     } 
 
 
 
 window.onload = function() {
     if(cookieSaved !== null){
-        divPurple.classList.add('hide'); 
+        homeSection.classList.add('hide'); 
     }
       };    
+
+
+
+
+
 
