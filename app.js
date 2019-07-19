@@ -1,11 +1,76 @@
-const red = document.getElementById("red");
-const blue = document.getElementById("blue");
-const green = document.getElementById("green");
-const divPurple = document.getElementById('purple-div');
-const colors = document.getElementsByClassName('colors');
-const redDiv = document.getElementById('red-div');
-const blueDiv = document.getElementById('blue-div');
-const greenDiv = document.getElementById('green-div');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,5 +142,5 @@ let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
 
 
 
-    
+
 
