@@ -10,42 +10,388 @@
     <title>Segmentación</title>
     <!-- <script src="jquery-3.4.1.min.js"></script> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="jbb-focal-cont">
-        <div>
-            <div class="purple" id="purple-div">
-                 <p>HOME</p>
+       
 
-            </div>
-            <form id="myform">
-                    red <input type="checkbox" name="checkfield" id="red"  onchange="doalert(this)"/>
-                    blue <input type="checkbox" name="checkfield" id="blue"  onchange="doalert(this)"/>
-                    green <input type="checkbox" name="checkfield" id="green"  onchange="doalert(this)"/>
-                     
-            
-                 </form>
-        </div>
-        <div class="colors red-div  hide" id="red-div">
-              <p>RED</p>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
-        </div>
-        <div class="colors blue-div hide" id="blue-div">
-                <p>BLUE</p>  
-        </div>
-        <div class="colors green-div hide" id="green-div">
-                <p>GREEN</p> 
-              
-        </div>
 
-        <div><p>Soy totalmente Palacio</p></div>
+        <section class="segmentation" id="home-section">
+            
+            <article class="principal-art ">
+                <div class="bottm-cent">
+                        <h1 id="title">Star Wars</h1>
+                <div class="pleca">
+                    <img class="img-responsive" src="./assets/img/PLECA-DESCUENTOS.svg" alt="">
+                </div>
+                        <button class="btn-buy">Comprar Ahora</button>
+                        <p class="valid">Hasta Julio del 2019</p>
+
+                    </div>
+            </article>
+            <p id="for-fun">
+            <small id="hashtag">#SOYTOTALMENTEPH</small> <br>
+                PARA DIVERTIRTE</p> 
+        
+            <div class="grid-art">
+
+         
+            <figure class="img-1">
+                <img  class="square" src="./assets/img/LEGO.JPG" alt="casa-lego">
+                <p>Lego</p>
+            </figure>
+
+            <figure class="img-2">
+                <img class="square" src="./assets/img/LEGO-2.JPG" alt="lego">
+                <p>Lego</p>
+            </figure>
+
+            <figure class="img-3">
+                <img class="square"src="./assets/img/LEGO-3.JPG" alt="lego">
+                <p>Lego Wally</p>
+            </figure>
+        </div>      
+        </section>
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn-preferencias" data-toggle="modal" data-target="#exampleModalCenter">
+        Preferencias
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade modal-sm" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title style-modal" id="exampleModalCenterTitle">SOLO PARA TI</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Elige la opción que te identifique</p>
+              <form id="myform">
+                    <input type="checkbox" name="checkfield" id="luxe"  onchange="doalert(this)"/>Lujo<br>
+                    <input type="checkbox" name="checkfield" id="man"   onchange="doalert(this)"/>Hombre<br>
+                    <input type="checkbox" name="checkfield" id="woman"  onchange="doalert(this)"/>Mujer <br>
+                     
+                    <input type="text" placeholder="correo electrónico">
+                 </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class=" btn-modal" data-dismiss="modal">Aceptar</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- seccion de lujo -->
+      <section class="segmentation hide" id="luxe-section">
+          <article class="principal-art-luxe">
+         
+              <h1 id="title-luxe">Lujo</h1>
+              <div class="bottm-cent">
+                    <h1 id="title">Louis Vuitton</h1>
+            <div class="pleca">
+                <img class="img-responsive" src="./assets/img/PLECA-DESCUENTOS.svg" alt="">
+            </div>
+                    <button class="btn-buy">Comprar Ahora</button>
+                    <p class="valid">Hasta Julio del 2019</p>
+
+                </div>
+
+            </article>
+            <p id="for-fun">
+            <small id="hashtag">#SOYTOTALMENTEPH</small> <br>
+                CON ESTILO</p> 
+        
+            <div class="grid-art">
+
+         
+            <figure class="img-1">
+                <img  class="square" src="./assets/img/LUJO-1.jpg" alt="reloj">
+                <p>Lego</p>
+            </figure>
+
+            <figure class="img-2">
+                <img class="square" src="./assets/img/LUJO-2.jpg" alt="zapatos">
+                <p>Lego</p>
+            </figure>
+
+            <figure class="img-3">
+                <img class="square"src="./assets/img/LUJO-3.jpg" alt="lentes">
+                <p>Lego Wally</p>
+            </figure>
+        </div>      
+        </section>
+
+
+        <!-- Sección para hombres -->
+        <section class="segmentation hide" id="man-section">
+            
+                <article class="principal-art-man">
+                        <h1 id="title-luxe">Hombres</h1>
+                    <div class="bottm-cent">
+                        <button class="btn-buy">Comprar Ahora</button>
+                        <p class="valid">Hasta Julio del 2019</p>
+
+                    </div>
+                </article>
+                <p id="for-fun">
+                <small id="hashtag">#SOYTOTALMENTEPH</small> <br>
+                    EN TENDENCIA</p> 
+            
+                <div class="grid-art">
+    
+             
+                <figure class="img-1">
+                    <img  class="square" src="./assets/img/LEGO.JPG" alt="casa-lego">
+                    <p>Lego</p>
+                </figure>
+    
+                <figure class="img-2">
+                    <img class="square" src="./assets/img/LEGO-2.JPG" alt="lego">
+                    <p>Lego</p>
+                </figure>
+    
+                <figure class="img-3">
+                    <img class="square"src="./assets/img/LEGO-3.JPG" alt="lego">
+                    <p>Lego Wally</p>
+                </figure>
+            </div>      
+            </section>
+
+            
+
+            <!-- Sección para mujeres -->
+            <section class="segmentation hide" id="woman-section">
+            
+                    <article class="principal-art">
+                        <h1 id="title">Mujeres</h1>
+                        <div class="bottm-cent">
+                                <button class="btn-buy">Comprar Ahora</button>
+                                <p class="valid">Hasta Julio del 2019</p>
+        
+                            </div>
+                    </article>
+                    <p id="for-fun">
+                    <small id="hashtag">#SOYTOTALMENTEPH</small> <br>
+                        MODA QUE INSPIRA</p> 
+                
+                    <div class="grid-art">
+        
+                 
+                    <figure class="img-1">
+                        <img  class="square" src="./assets/img/LEGO.JPG" alt="casa-lego">
+                        <p>Lego</p>
+                    </figure>
+        
+                    <figure class="img-2">
+                        <img class="square" src="./assets/img/LEGO-2.JPG" alt="lego">
+                        <p>Lego</p>
+                    </figure>
+        
+                    <figure class="img-3">
+                        <img class="square"src="./assets/img/LEGO-3.JPG" alt="lego">
+                        <p>Lego Wally</p>
+                    </figure>
+                </div>      
+                </section>
+        
 
     </div>
 
 
 
     <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
