@@ -1,3 +1,4 @@
+
 .hide{
     display:none;
  }
@@ -208,4 +209,154 @@ span{
       padding: 6px;
   }
   
+
+
+
+
+
+
+.img-responsive{
+    display:block;
+    width: 100%;
+
+}
+.principal-art{
+    position: relative;
+    height: 25rem;
+    background-image: url(./assets/img/LEGO-PRINCIPAL.jpg);
+    margin: 6% 6% 5% 6%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.segmentation{
+    display: grid;
+    grid-template-rows: 60% 13% auto 10%;
+    height: 100vh;
+    padding-top: 65px;
+}
+
+.square{  
+    
+    width: 6.2rem;
+    height: 8.3rem;
+}
+
+.grid-art{
+    display:grid;
+    grid-row: 3;
+    grid-template-columns: 5% 26% 5% 26% 5% 26% 5%;   
+}
+
+.img-1{
+    grid-column: 2;
+}
+
+.img-2{
+    grid-column: 4;
+}
+
+.img-3{
+    grid-column: 6;
+}
+
+.btn-buy{
+    width: 13.3rem;
+    height: 8%;
+    background-color: #FEC818;
+    color: white;
+    border: none;
+    line-height: 2;
+    
+}
+
+#title{
+color: white;
+font-weight: bolder;
+font-size: 30px;
+}
+
+
+.valid{
+    font-family: Gotham;
+    font-size: .8rem;
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+}
+
+#for-fun{
+    font-weight: 900;
+    grid-row: 2;
+    height: .2rem;
+    margin-top: 7%;
+    margin-left:30%;
+    font-size: 90%;
+    
+    
+}
+
+#hashtag{
+    color: #FEC818;
+}
+
+.style-modal{
+    color: #FEC818;
+    margin-left: 25%;
+}
+
+.btn-modal{
+    background: #FEC818;
+    width : 40%;
+    border: none;
+    color: white;
+}
+                   
+.hide{                   
+    
+    display:none; 
+   }
+
+
+#title-luxe{
+    text-align: center;
+    border-bottom: 1px solid #fec424;
+    max-width: 65%;
+    margin: 0 auto;
+    margin-top: -60px;
+}
+
+.principal-art-luxe{
+    height: 25rem;
+    background-image:url(./assets/img/LUJO\ PRINCIPAL.jpg);
+    margin: 6% 6% 5% 6%;
+    position: relative;
+    text-align: center;
+    
+}
+
+.principal-art-man{
+    height: 25rem;
+    background-image:url(./assets/img/LUJO\ PRINCIPAL.jpg);
+    margin: 6% 6% 5% 6%;
+    position: relative;
+    text-align: center;
+}
+.bottm-cent{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+
+}
+
+.pleca{
+    padding: 16px;
+}
+
+.btn-preferencias{
+    border: none;
+    background: #FEC818;
+    color:white;
+}
 
