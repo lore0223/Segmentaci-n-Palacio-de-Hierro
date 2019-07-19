@@ -8,60 +8,74 @@ const blueDiv = document.getElementById('blue-div');
 const greenDiv = document.getElementById('green-div');
 
 
-function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
 
-function getCookie(name) {
-   
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-    }
-    return null;
-}
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
-function eraseCookie(name) {
-    setCookie(name, "", -1);
-}
+let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
+    x = setInterval(function() {
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+    }, second)
+
+
+    
 
 
 
-function doalert(checkboxElem) {
-    // divPurple.classList.add('hide');
-    let checkboxId = checkboxElem.id;
-    const checkboxName = checkboxElem.name;
-    setCookie(checkboxName, checkboxId, 1)
-}
-
-let cookieSaved = getCookie('checkfield');
-console.log(cookieSaved)
-
-    if (cookieSaved == 'red') {
-        redDiv.classList.remove('hide');
-
-    } else if (cookieSaved == 'blue') {
-
-        blueDiv.classList.remove('hide');
-
-    } else if (cookieSaved ==  'green') {
-        greenDiv.classList.remove('hide');
-    } 
 
 
 
-window.onload = function() {
-    if(cookieSaved !== null){
-        divPurple.classList.add('hide'); 
-    }
-      };    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 

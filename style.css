@@ -18,3 +18,194 @@
     border: solid 3px purple;
     margin-top: 5%;
  }
+
+ .container {
+   color: #333;
+   text-align: center;
+   background: white;
+   grid-column-end: 4;
+   grid-column-start: 1;
+   grid-row-start: 2;
+   grid-row-end: 4;
+ }
+ 
+ h1 {
+   font-weight: normal;
+ }
+ 
+ li {
+   display: inline-block;
+   font-size: .5em;
+   list-style-type: none;
+   text-transform: uppercase;
+  
+ }
+ 
+ 
+
+ #days-span{
+   font-size: 1em;
+
+ }
+
+ li span {
+
+   font-size: 14px;
+ }
+
+ .words{
+    background-color: white;
+    text-align: center;
+ }
+
+.days{
+    margin-left: 3px;
+ }
+ 
+span{
+   color:black;
+}
+ /* .logo-navbar{
+    width: 9rem;
+    grid-column: 3;
+    
+ } */
+
+ .navbar-grid{
+   background-image: url("assets/img/ABOVE.jpg");
+   background-repeat: no-repeat;
+   background-size: 100vw;
+   display: grid;
+   grid-template-columns: 72% 24% auto;
+   grid-template-rows: 12% 25% auto 18% 16% 10%;
+   width: 100vw;
+   height: 75vh;
+   position: relative;
+   }
+
+.image-above{
+   /* display: grid;
+   grid-template-columns: 69% auto 10%;
+   grid-template-rows: 69% auto 10%; */
+   grid-column: 2;
+   grid-row:2;
+   width: 5.2em;
+   
+}
+
+ .circus{
+   width: 100%;
+  
+
+ }   
+
+   .counter{
+      width: 12em;
+      height: 6em;
+      background-color: white;
+      font-size: .5rem;
+      grid-column: 1;
+      grid-row: 3;
+      
+   } 
+
+  .counter-hours{
+   margin-top: 0.01em;
+    margin-left: -37px
+  }
+  .circle-img{
+     display: grid;
+   grid-template-columns:5% auto 12% auto 12% auto 5%;
+   grid-template-rows:12% auto 12%;
+   height: 15vh;
+   }
+
+   .each-img-1{
+      background-color:rgba(12, 12, 12, 0.5);
+      -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+      grid-row:2;
+      grid-column:2;
+    width: 5em;
+    height: 5em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+   }
+
+   .each-img-2{
+      background-color: rgba(12, 12, 12, 0.5);
+      grid-row:2;
+      grid-column:4;
+      -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     width: 5em;
+    height: 5em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+      
+   }
+
+   .each-img-3{
+      background-color: rgba(12, 12, 12, 0.5);
+      grid-row:2;
+      grid-column:6;
+      -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     width: 5em;
+     height: 5em;
+     padding-left: 1em;
+     padding-top: 0.5em;
+     
+      
+   }
+
+   img {
+      display: block;
+      width: 100%;
+  }
+   .vmujer{
+      width: 3em;
+   }
+
+   .bmujer{
+      width: 3em;
+   }
+
+   .zmujer{
+      width: 3em;
+   }
+
+   .oferta{
+      display: grid;
+      background-color: white;
+      grid-row: 4;
+      grid-column: 1/4;
+   }
+
+.padre{
+   position: relative;
+}
+   .centrado {
+    
+      width: 100%;
+      position: absolute;
+      height: 80px;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+  }
+
+.banner{
+   position: absolute;
+}
+  .pleca-des{
+    
+      position: absolute;
+      bottom: -14px;
+      padding: 6px;
+  }
+  
+
